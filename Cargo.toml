@@ -17,7 +17,7 @@ include = [
     "/data/**",
 ]
 keywords = ["network", "mac", "manufacturer", "mac-address", "manuf", "no_std"]
-repository = "https://github.com/kkrypt0nn/rsmanuf"
+repository = "https://github.com/erk-/macnuf"
 edition = "2021"
 
 [package.metadata.files]
