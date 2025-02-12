@@ -16,7 +16,7 @@ include = [
     "/src/**",
     "/data/**",
 ]
-keywords = ["network", "mac", "manufacturer", "mac-address", "manuf", "no_std"]
+keywords = ["network", "mac", "manufacturer", "mac-address", "manuf"]
 repository = "https://github.com/erk-/macnuf"
 edition = "2021"
 
