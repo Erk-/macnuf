@@ -1,6 +1,9 @@
-use std::collections::BTreeMap;
-use std::fmt::Write as _;
-use std::path::Path;
+use std::{
+    collections::{BTreeMap, HashSet},
+    fs::File,
+    io::{BufWriter, Write as _},
+    path::Path,
+};
 
 static MANUF: &str = include_str!("data/manuf.txt");
 
@@ -33,84 +36,111 @@ fn main() {
         data.insert(eui, manuf);
     }
 
-    let mut f = String::new();
+    let path = Path::new(&std::env::var("OUT_DIR").unwrap()).join("lookup.rs");
+    let mut f = BufWriter::new(File::create(&path).unwrap());
+
+    writeln!(&mut f, "enum Manuf {{ Manuf(&'static str), S28, S36 }}").unwrap();
 
     writeln!(
         &mut f,
-        "pub(crate) const fn mac_lookup(eui: [u8; 6]) -> Option<&'static str> {{"
+        "pub(crate) fn mac_lookup(eui: [u8; 6]) -> Option<&'static str> {{"
     )
     .unwrap();
-    writeln!(&mut f, "match eui.as_slice() {{").unwrap();
+    writeln!(&mut f, "let eui_prefix = [eui[0], eui[1], eui[2]];").unwrap();
 
+    let mut mac_map = phf_codegen::Map::new();
+    let mut slash28 = HashSet::new();
+    let mut slash36 = HashSet::new();
     for (key, value) in data.iter() {
-        if key.len() > 3
-        {
+        if key.len() > 3 {
             continue;
         }
+
+        let arr = [key[0], key[1], key[2]];
 
         if value == "IEEE Registration Authority" {
             if slash_28.keys().any(|x| x.starts_with(key)) {
-                write!(&mut f, "[").unwrap();
-                for bp in key.iter() {
-                    write!(&mut f, "0x{bp:02X},").unwrap();
+                if slash28.insert(arr) {
+                    mac_map.entry(arr, "Manuf::S28");
                 }
-                writeln!(&mut f, " ..] => slash28_lookup(eui),").unwrap();
             } else if slash_36.keys().any(|x| x.starts_with(key)) {
-                write!(&mut f, "[").unwrap();
-                for bp in key.iter() {
-                    write!(&mut f, "0x{bp:02X},").unwrap();
+                if slash36.insert(arr) {
+                    mac_map.entry(arr, "Manuf::S36");
                 }
-                writeln!(&mut f, " ..] => slash36_lookup(eui),").unwrap();
             }
+
             continue;
         }
 
-        write!(&mut f, "[").unwrap();
-        for bp in key.iter() {
-            write!(&mut f, "0x{bp:02X},").unwrap();
-        }
         let name = value.trim().replace('\u{200B}', "");
-        writeln!(&mut f, " ..] => Some(r#\"{}\"#),", name).unwrap();
+        let name = format!("Manuf::Manuf(r#\"{name}\"#)");
+        mac_map.entry(arr, &name);
     }
-    writeln!(&mut f, "_ => None,").unwrap();
-    writeln!(&mut f, "}} }}").unwrap();
+    writeln!(
+        &mut f,
+        "static PREFIX: phf::Map<[u8; 3], Manuf> = \n{};\n",
+        mac_map.build()
+    )
+    .unwrap();
 
-    writeln!(&mut f, "const fn slash28_lookup(mut eui: [u8; 6]) -> Option<&'static str> {{").unwrap();
-    writeln!(&mut f, "eui[3] &= 0xF0;").unwrap();
-    writeln!(&mut f, "eui[4] = 0;").unwrap();
-    writeln!(&mut f, "eui[5] = 0;").unwrap();
-    writeln!(&mut f,   "match eui.as_slice() {{").unwrap();
+    writeln!(
+        &mut f,
+        "match PREFIX.get(&eui_prefix)? {{ Manuf::Manuf(s) => Some(s), Manuf::S28 => slash28_lookup(eui), Manuf::S36 => slash36_lookup(eui) }}"
+    ).unwrap();
+
+    writeln!(&mut f, "}}").unwrap();
+
+    writeln!(
+        &mut f,
+        "fn slash28_lookup(eui: [u8; 6]) -> Option<&'static str> {{"
+    )
+    .unwrap();
+    let mut mac_map = phf_codegen::Map::new();
     for (key, value) in slash_28.iter() {
-        write!(&mut f, "[").unwrap();
-        for bp in key.iter() {
-            write!(&mut f, "0x{bp:02X},").unwrap();
-        }
+        let arr = [key[0], key[1], key[2], key[3] & 0xF0];
         let name = value.trim().replace('\u{200B}', "");
-        writeln!(&mut f, " ..] => Some(r#\"{}\"#),", name).unwrap();
+        let name = format!("r#\"{name}\"#");
+        mac_map.entry(arr, &name);
     }
-    writeln!(&mut f, "_ => None,").unwrap();
-    writeln!(&mut f, "}} }}").unwrap();
+    writeln!(
+        &mut f,
+        "static SLASH28: phf::Map<[u8; 4], &'static str> = \n{};\n",
+        mac_map.build()
+    )
+    .unwrap();
+    writeln!(
+        &mut f,
+        "SLASH28.get(&[eui[0], eui[1], eui[2], eui[3] & 0xF0]).map(|v| &**v)",
+    )
+    .unwrap();
 
+    writeln!(&mut f, "}}").unwrap();
 
-    writeln!(&mut f, "const fn slash36_lookup(mut eui: [u8; 6]) -> Option<&'static str> {{").unwrap();
-    writeln!(&mut f, "eui[4] &= 0xF0;").unwrap();
-    writeln!(&mut f, "eui[5] = 0;").unwrap();
-    writeln!(&mut f,   "match eui.as_slice() {{").unwrap();
+    writeln!(
+        &mut f,
+        "fn slash36_lookup(eui: [u8; 6]) -> Option<&'static str> {{"
+    )
+    .unwrap();
+    let mut mac_map = phf_codegen::Map::new();
     for (key, value) in slash_36.iter() {
-        write!(&mut f, "[").unwrap();
-        for bp in key.iter() {
-            write!(&mut f, "0x{bp:02X},").unwrap();
-        }
+        let arr = [key[0], key[1], key[2], key[3], key[4] & 0xF0];
         let name = value.trim().replace('\u{200B}', "");
-        writeln!(&mut f, " ..] => Some(r#\"{}\"#),", name).unwrap();
+        let name = format!("r#\"{name}\"#");
+        mac_map.entry(arr, &name);
     }
-    writeln!(&mut f, "_ => None,").unwrap();
-    writeln!(&mut f, "}} }}").unwrap();
-    
+    writeln!(
+        &mut f,
+        "static SLASH36: phf::Map<[u8; 5], &'static str> = \n{};\n",
+        mac_map.build()
+    )
+    .unwrap();
+    writeln!(
+        &mut f,
+        "SLASH36.get(&[eui[0], eui[1], eui[2], eui[3], eui[4] & 0xF0]).map(|v| &**v)",
+    )
+    .unwrap();
+    writeln!(&mut f, "}}").unwrap();
 
-    let out_dir = std::env::var_os("OUT_DIR").unwrap();
-    let dest_path = Path::new(&out_dir).join("lookup.rs");
-    std::fs::write(&dest_path, f).unwrap();
     println!("cargo::rerun-if-changed=build.rs");
     println!("cargo::rerun-if-changed=data/manuf.txt");
 }
