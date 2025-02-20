@@ -39,7 +39,7 @@ jobs:
         id: date
         run: |
           export NOW="$(date +'%Y%m%d')"
-          sed -i -E "s/(version = \"[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]\+).+/\1$NOW\"/" Cargo.toml
+          perl -pi -e 's/version = \"(\d+)+\.(\d+)+\.(\d+)+(.*)\"$/"version = \"".$1.".".$2.".".($3+1)."+".$ENV{NOW}."\""/e' Cargo.toml
           echo "now_dash=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Commit and PR changes
