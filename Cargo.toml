@@ -2,7 +2,7 @@
 name = "macnuf"
 description = "A #![no_std] Rust library to get the manufacturer of a specific MAC address"
 authors = ["Valdemar Erk <crates@erk.dev>"]
-version = "0.1.7+20250331"
+version = "0.1.8+20250407"
 categories = ["network-programming", "no-std"]
 license-file = "LICENSE.md"
 readme = "README.md"
