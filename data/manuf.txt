@@ -17435,6 +17435,7 @@
 04:1E:64		Apple, Inc.
 04:1E:7A		DSPWorks
 04:1E:FA		BISSELL Homecare, Inc.
+04:1F:B8		vivo Mobile Communication Co., Ltd.
 04:20:84		zte corporation
 04:20:8A		浙江路川科技有限公司
 04:20:9A		Panasonic Corporation AVC Networks Company
@@ -20911,6 +20912,7 @@
 1C:D1:BA		Fiberhome Telecommunication Technologies Co.,LTD
 1C:D1:D7		Hangzhou BroadLink Technology Co., Ltd
 1C:D1:E0		Cisco Systems, Inc
+1C:D3:AF		LG Innotek
 1C:D4:0C		Kriwan Industrie-Elektronik GmbH
 1C:D5:E2		Shenzhen YOUHUA Technology Co., Ltd
 1C:D6:BD		Leedarson Lighting Co., Ltd.
@@ -22374,6 +22376,7 @@
 2C:01:0B		NASCENT Technology, LLC - RemKon
 2C:01:B5		Cisco Systems, Inc
 2C:02:9F		3ALogics
+2C:03:69		Accton Technology Corporation
 2C:05:47		Shenzhen Phaten Tech. LTD
 2C:06:23		Win Leader Inc.
 2C:07:3C		Devline Limited
@@ -22999,6 +23002,7 @@
 30:2D:E8		JDA, LLC (JDA Systems)
 30:2F:1E		Siemens Ag
 30:2F:AC		Zhejiang HuaRay Technology Co.,Ltd
+30:30:5F		Valeo Schalter und Sensoren GmbH
 30:30:D0		Texas Instruments
 30:30:F9		Espressif Inc.
 30:31:7D		Hosiden Corporation
@@ -24744,6 +24748,7 @@
 3C:9F:C3		Beijing Sinead Technology Co., Ltd.
 3C:9F:CD		Shenzhen Neoway Technology Co.,Ltd.
 3C:A0:67		Liteon Technology Corporation
+3C:A0:70		Blink by Amazon
 3C:A1:0D		Samsung Electronics Co.,Ltd
 3C:A1:61		Huawei Technologies Co.,Ltd
 3C:A2:C3		vivo Mobile Communication Co., Ltd.
@@ -24777,6 +24782,7 @@
 3C:B4:3D		SZ Tenveo video technology co., Ltd
 3C:B5:3D		Hunan Goke Microelectronics Co.,Ltd
 3C:B6:B7		vivo Mobile Communication Co., Ltd.
+3C:B6:E7		Handheld Scientific, Inc.
 3C:B7:2B		PLUMgrid Inc
 3C:B7:4B		Vantiva USA LLC
 3C:B7:92		Hitachi Maxell, Ltd., Optronics Division
@@ -25979,6 +25985,7 @@
 44:37:6F		Young Electric Sign Co
 44:37:E6		Hon Hai Precision Ind. Co.,Ltd.
 44:38:39		Cumulus Networks, inc
+44:38:8C		Sumitomo Electric Industries, Ltd
 44:38:E8		Intel Corporate
 44:39:C4		Universal Global Scientific Industrial Co., Ltd.
 44:3B:14		MitraStar Technology Corp.
@@ -26911,6 +26918,7 @@
 4C:43:41		Calix Inc.
 4C:44:5B		Intel Corporate
 4C:45:76		China Mobile(Hangzhou) Information Technology Co.,Ltd.
+4C:46:D1		Guangzhou V-Solution Telecommunication Technology Co.,Ltd.
 4C:48:DA		Beijing Autelan Technology Co.,Ltd
 4C:49:29		TCL King Electrical Appliances(Huizhou)Co.,Ltd
 4C:49:4F		zte corporation
@@ -26964,6 +26972,7 @@
 4C:5E:D3		Unisyue Technologies Co; LTD.
 4C:5F:70		Intel Corporate
 4C:5F:D2		Alcatel-Lucent
+4C:60:AD		Amazon Technologies Inc.
 4C:60:BA		AltoBeam Inc.
 4C:60:D5		airPointe of New Hampshire
 4C:60:DE		Netgear
@@ -27136,6 +27145,7 @@
 4C:AB:FC		zte corporation
 4C:AC:0A		zte corporation
 4C:AD:A8		Panoptics Corp.
+4C:AD:DF		Công ty Cổ phần Thiết bị Công nghiệp GEIC
 4C:AE:13		Huawei Technologies Co.,Ltd
 4C:AE:1C		SaiNXT Technologies LLP
 4C:AE:31		ShengHai Electronics (Shenzhen) Ltd
@@ -27617,6 +27627,7 @@
 50:98:93		Texas Instruments
 50:98:B8		New H3C Technologies Co., Ltd
 50:98:F3		Rheem Australia Pty Ltd
+50:99:03		Meta Platforms, Inc.
 50:99:5A		Amazon Technologies Inc.
 50:9A:46		Safetrust Inc
 50:9A:4C		Dell Inc.
@@ -30018,6 +30029,7 @@
 64:CB:E9		LG Innotek
 64:CC:22		Arcadyan Corporation
 64:CC:2E		Xiaomi Communications Co Ltd
+64:CD:C2		Amazon Technologies Inc.
 64:CD:F1		KO & AL Co., Ltd
 64:CE:6E		Sierra Wireless, ULC
 64:CF:13		Weigao Nikkiso(Weihai)Dialysis Equipment Co.,Ltd
@@ -36367,6 +36379,17 @@
 78:75:3E		Apple, Inc.
 78:76:89		eero inc.
 78:76:D9		EXARA Group
+78:78:35		IEEE Registration Authority
+78:78:35:00:00:00/28	ATsens
+78:78:35:10:00:00/28	ENQT GmbH
+78:78:35:40:00:00/28	Jiaxing Cyber Sensor Intelligent Technology Co., Ltd.
+78:78:35:50:00:00/28	IRISS Inc.
+78:78:35:70:00:00/28	Ambient Life Inc.
+78:78:35:80:00:00/28	Shandong Xintong Electronics Co., Ltd
+78:78:35:A0:00:00/28	Skylight
+78:78:35:B0:00:00/28	Shanghai Intchains Technology Co., Ltd.
+78:78:35:C0:00:00/28	DBG Communications Technology Co.,Ltd.
+78:78:35:D0:00:00/28	Suzhou Chena Information Technology Co., Ltd.
 78:7A:6F		Juice Technology AG
 78:7B:8A		Apple, Inc.
 78:7D:48		Itel Mobile Limited
@@ -37277,6 +37300,7 @@
 80:22:78		China Mobile IOT Company Limited
 80:22:A7		NEC Platforms, Ltd.
 80:22:FA		Itel Mobile Limited
+80:23:95		AVM Audiovisuelles Marketing und Computersysteme GmbH
 80:24:8F		Cisco Systems, Inc
 80:25:11		Itel Mobile Limited
 80:26:89		D-Link International
@@ -37514,6 +37538,7 @@
 80:AC:C8		Phyplus Microelectronics Limited
 80:AD:16		Xiaomi Communications Co Ltd
 80:AD:67		Kasda Networks Inc
+80:AE:3C		Taicang T&W Electronics
 80:AE:54		Tp-Link Technologies Co.,Ltd.
 80:AF:19		Apple, Inc.
 80:AF:CA		Shenzhen Cudy Technology Co., Ltd.
@@ -38022,6 +38047,7 @@
 84:CC:A8		Espressif Inc.
 84:CD:62		ShenZhen IDWELL Technology CO.,Ltd
 84:CF:BF		Fairphone
+84:D0:DB		Guangdong Juan Intelligent Technology Joint Stock Co., Ltd.
 84:D1:5A		TCT mobile ltd
 84:D3:28		Apple, Inc.
 84:D3:2A		Ieee 1905.1
@@ -38768,7 +38794,8 @@
 8C:1F:64:06:C0:00/36	COBES GmbH
 8C:1F:64:06:D0:00/36	Monnit Corporation
 8C:1F:64:07:10:00/36	Dorlet Sau
-8C:1F:64:07:30:00/36	Potter Electric Signal Company
+8C:1F:64:07:20:00/36	Eyecloud, Inc
+8C:1F:64:07:30:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:07:60:00/36	Pack'R
 8C:1F:64:07:70:00/36	Engage Technologies
 8C:1F:64:07:A0:00/36	Flextronics International Kft
@@ -38895,7 +38922,7 @@
 8C:1F:64:14:80:00/36	Carehawk
 8C:1F:64:14:90:00/36	Clock-O-Matic
 8C:1F:64:14:A0:00/36	Richie Ltd
-8C:1F:64:14:B0:00/36	Potter Electric Signal Company
+8C:1F:64:14:B0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:14:D0:00/36	Vertesz Elektronika Kft.
 8C:1F:64:14:F0:00/36	Nsm
 8C:1F:64:15:10:00/36	Gogo Business Aviation
@@ -39043,6 +39070,7 @@
 8C:1F:64:27:20:00/36	Comminent Pvt Ltd
 8C:1F:64:27:30:00/36	Distran AG
 8C:1F:64:27:40:00/36	Invixium Access Inc
+8C:1F:64:27:70:00/36	Shenzhen Angstrom Excellence Technology Co., Ltd
 8C:1F:64:27:B0:00/36	Oriux
 8C:1F:64:27:C0:00/36	Tactical Blue Space Ventures LLC
 8C:1F:64:27:D0:00/36	Pneumax Spa
@@ -39138,7 +39166,7 @@
 8C:1F:64:30:F0:00/36	East Photonics
 8C:1F:64:31:30:00/36	Sb-Group Ltd
 8C:1F:64:31:40:00/36	Cedel BV
-8C:1F:64:31:60:00/36	Potter Electric Signal Company
+8C:1F:64:31:60:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:31:70:00/36	Bacancy Systems LLP
 8C:1F:64:31:90:00/36	Exato Company
 8C:1F:64:31:A0:00/36	Asiga Pty Ltd
@@ -39255,6 +39283,7 @@
 8C:1F:64:3D:20:00/36	UVIRCO Technologies
 8C:1F:64:3D:40:00/36	e.p.g. Elettronica s.r.l.
 8C:1F:64:3D:50:00/36	FRAKO Kondensatoren- und Anlagenbau GmbH
+8C:1F:64:3D:70:00/36	Eiden Co.,Ltd.
 8C:1F:64:3D:90:00/36	Unlimited Bandwidth LLC
 8C:1F:64:3D:B0:00/36	BRS Sistemas Eletrônicos
 8C:1F:64:3E:00:00/36	YPP Corporation
@@ -39265,6 +39294,7 @@
 8C:1F:64:3E:80:00/36	Ruichuangte
 8C:1F:64:3E:90:00/36	Heitec Ag
 8C:1F:64:3E:A0:00/36	Chipscape Security Systems
+8C:1F:64:3E:B0:00/36	Samwell International Inc
 8C:1F:64:3E:D0:00/36	The Exploration Company
 8C:1F:64:3E:E0:00/36	BnB Information Technology
 8C:1F:64:3F:20:00/36	Surya Electronics
@@ -39310,7 +39340,7 @@
 8C:1F:64:43:D0:00/36	Solid State Supplies Ltd
 8C:1F:64:44:00:00/36	MB connect line GmbH Fernwartungssysteme
 8C:1F:64:44:10:00/36	Novanta IMS
-8C:1F:64:44:20:00/36	Potter Electric Signal Co LLC
+8C:1F:64:44:20:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:44:40:00/36	Contrive Srl
 8C:1F:64:44:50:00/36	Figment Design Laboratories
 8C:1F:64:44:A0:00/36	Onbitel
@@ -39484,7 +39514,7 @@
 8C:1F:64:57:40:00/36	Flock Audio Inc.
 8C:1F:64:57:50:00/36	Yu-Heng Electric Co., LTD
 8C:1F:64:57:A0:00/36	NPO ECO-INTECH Ltd.
-8C:1F:64:57:B0:00/36	Potter Electric Signal Company
+8C:1F:64:57:B0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:57:D0:00/36	ISDI Ltd
 8C:1F:64:57:E0:00/36	Guoqing (shangdong) Information Technology Co.,Ltd
 8C:1F:64:58:00:00/36	SAKURA SEIKI Co., Ltd.
@@ -39585,6 +39615,7 @@
 8C:1F:64:62:40:00/36	Canastra AG
 8C:1F:64:62:50:00/36	Stresstech OY
 8C:1F:64:62:60:00/36	Csiro
+8C:1F:64:62:70:00/36	ibg Prüfcomputer GmbH
 8C:1F:64:62:C0:00/36	Hangzhou EasyXR Advanced Technology Co., Ltd.
 8C:1F:64:62:D0:00/36	Embeddded Plus Plus
 8C:1F:64:62:E0:00/36	ViewSonic Corp
@@ -39654,7 +39685,7 @@
 8C:1F:64:6A:40:00/36	Automata Spa
 8C:1F:64:6A:80:00/36	Bulwark
 8C:1F:64:6A:B0:00/36	Toho System Co., Ltd.
-8C:1F:64:6A:D0:00/36	Potter Electric Signal Company
+8C:1F:64:6A:D0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:6A:E0:00/36	Bray International
 8C:1F:64:6B:00:00/36	O-Net Technologies(Shenzhen)Group Co.,Ltd.
 8C:1F:64:6B:10:00/36	Specialist Mechanical Engineers (PTY)LTD
@@ -39673,7 +39704,7 @@
 8C:1F:64:6C:B0:00/36	GJD Manufacturing
 8C:1F:64:6C:C0:00/36	Newtouch Electronics (Shanghai) Co., LTD.
 8C:1F:64:6C:D0:00/36	Wuhan Xingtuxinke ELectronic Co.,Ltd
-8C:1F:64:6C:E0:00/36	Potter Electric Signal Company
+8C:1F:64:6C:E0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:6C:F0:00/36	Italora
 8C:1F:64:6D:00:00/36	Abb
 8C:1F:64:6D:20:00/36	VectorNav Technologies
@@ -39794,7 +39825,7 @@
 8C:1F:64:7A:10:00/36	Guardian Controls International Ltd
 8C:1F:64:7A:30:00/36	Ibercomp SA
 8C:1F:64:7A:40:00/36	Hirotech inc.
-8C:1F:64:7A:50:00/36	Potter Electric Signal Company
+8C:1F:64:7A:50:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:7A:60:00/36	OTMetric
 8C:1F:64:7A:70:00/36	Timegate Instruments Ltd.
 8C:1F:64:7A:A0:00/36	XSENSOR Technology Corp.
@@ -39867,6 +39898,7 @@
 8C:1F:64:81:70:00/36	nke marine electronics
 8C:1F:64:81:90:00/36	Warecube, Inc.
 8C:1F:64:81:A0:00/36	Gemini Electronics B.V.
+8C:1F:64:81:B0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:81:D0:00/36	Gogo BA
 8C:1F:64:81:F0:00/36	ViewSonic Corp
 8C:1F:64:82:00:00/36	Tiama
@@ -39991,7 +40023,7 @@
 8C:1F:64:8F:60:00/36	Idneo Technologies S.A.U.
 8C:1F:64:8F:80:00/36	HIGHVOLT Prüftechnik
 8C:1F:64:8F:B0:00/36	Televic Rail GmbH
-8C:1F:64:8F:E0:00/36	Potter Electric Signal Company
+8C:1F:64:8F:E0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:8F:F0:00/36	Kruger DB Series Indústria Eletrônica ltda
 8C:1F:64:90:10:00/36	Comrex
 8C:1F:64:90:20:00/36	TimeMachines Inc.
@@ -40049,7 +40081,7 @@
 8C:1F:64:96:20:00/36	Umano Medical Inc.
 8C:1F:64:96:30:00/36	Gogo Business Aviation
 8C:1F:64:96:40:00/36	Power Electronics Espana, S.L.
-8C:1F:64:96:50:00/36	Potter Electric Signal Company
+8C:1F:64:96:50:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:96:60:00/36	Raster Images Pvt. Ltd
 8C:1F:64:96:70:00/36	Dave Srl
 8C:1F:64:96:80:00/36	Iav Engineering Sarl
@@ -40157,6 +40189,7 @@
 8C:1F:64:A2:90:00/36	Ringtail Security
 8C:1F:64:A2:B0:00/36	WENet Vietnam Joint Stock company
 8C:1F:64:A2:D0:00/36	ACSL Ltd.
+8C:1F:64:A2:E0:00/36	EA Elektro-Automatik GmbH
 8C:1F:64:A3:00:00/36	TMP Srl
 8C:1F:64:A3:10:00/36	Zing Communications Inc
 8C:1F:64:A3:20:00/36	Nautel LTD
@@ -40430,6 +40463,7 @@
 8C:1F:64:C0:60:00/36	Tardis Technology
 8C:1F:64:C0:70:00/36	HYOSUNG Heavy Industries Corporation
 8C:1F:64:C0:80:00/36	Triamec Motion AG
+8C:1F:64:C0:90:00/36	S.E.I. Co.,Ltd.
 8C:1F:64:C0:A0:00/36	Acrolabs,Inc
 8C:1F:64:C0:C0:00/36	Giordano Controls Spa
 8C:1F:64:C0:D0:00/36	Abbott Diagnostics Technologies AS
@@ -40489,6 +40523,7 @@
 8C:1F:64:C6:E0:00/36	Safe Instruments
 8C:1F:64:C7:10:00/36	Yaviar LLC
 8C:1F:64:C7:50:00/36	Abbott Diagnostics Technologies AS
+8C:1F:64:C7:80:00/36	Polon-Alfa S.A.
 8C:1F:64:C7:90:00/36	P3Lab
 8C:1F:64:C7:B0:00/36	Freedom Atlantic
 8C:1F:64:C7:C0:00/36	MERKLE Schweissanlagen-Technik GmbH
@@ -40542,7 +40577,7 @@
 8C:1F:64:CD:B0:00/36	European Telecommunication International Kft
 8C:1F:64:CD:D0:00/36	The Signalling Company
 8C:1F:64:CD:F0:00/36	Canway Technology GmbH
-8C:1F:64:CE:00:00/36	Potter Electric Signal Company
+8C:1F:64:CE:00:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:CE:30:00/36	Pixel Design & Manufacturing Sdn. Bhd.
 8C:1F:64:CE:40:00/36	Sl Usa, Llc
 8C:1F:64:CE:B0:00/36	Eureka For Smart Properties Co. W.L.L
@@ -40619,7 +40654,7 @@
 8C:1F:64:D6:10:00/36	Advent Diamond
 8C:1F:64:D6:20:00/36	Alpes recherche et développement
 8C:1F:64:D6:30:00/36	Mobileye
-8C:1F:64:D6:40:00/36	Potter Electric Signal Company
+8C:1F:64:D6:40:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:D6:90:00/36	ADiCo Corporation
 8C:1F:64:D6:C0:00/36	Packetalk LLC
 8C:1F:64:D7:30:00/36	BRS Sistemas Eletrônicos
@@ -40666,6 +40701,7 @@
 8C:1F:64:DC:00:00/36	Pigs Can Fly Labs LLC
 8C:1F:64:DC:20:00/36	Procon Electronics Pty Ltd
 8C:1F:64:DC:30:00/36	Packet Digital, LLC
+8C:1F:64:DC:40:00/36	Amazon Robotics MTAC Matrix NPI
 8C:1F:64:DC:60:00/36	R&K
 8C:1F:64:DC:70:00/36	Wide Swath Research, LLC
 8C:1F:64:DC:80:00/36	Dwdm.Ru Llc
@@ -40798,7 +40834,7 @@
 8C:1F:64:EB:70:00/36	Delta Solutions LLC
 8C:1F:64:EB:90:00/36	KxS Technologies Oy
 8C:1F:64:EB:A0:00/36	Hyve Solutions
-8C:1F:64:EB:B0:00/36	Potter Electric Signal Company
+8C:1F:64:EB:B0:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:EB:C0:00/36	Project92.com
 8C:1F:64:EB:D0:00/36	Esprit Digital Ltd
 8C:1F:64:EB:E0:00/36	Trafag Italia S.r.l.
@@ -40870,6 +40906,7 @@
 8C:1F:64:F4:50:00/36	Jbf
 8C:1F:64:F4:60:00/36	Broadcast Tools, Inc.
 8C:1F:64:F4:90:00/36	CenterClick LLC
+8C:1F:64:F4:A0:00/36	In-lite Design BV
 8C:1F:64:F4:B0:00/36	Jorex Lorex India Private Limited
 8C:1F:64:F4:C0:00/36	inomatic GmbH
 8C:1F:64:F4:E0:00/36	ADAMCZEWSKI elektronische Messtechnik GmbH
@@ -40954,8 +40991,8 @@
 8C:1F:64:FD:A0:00/36	Arkham Technology
 8C:1F:64:FD:B0:00/36	DeepSenXe International ltd.
 8C:1F:64:FD:C0:00/36	Nuphoton Technologies
-8C:1F:64:FD:F0:00/36	Potter Electric Signal Company
-8C:1F:64:FE:00:00/36	Potter Electric Signal Company
+8C:1F:64:FD:F0:00/36	Potter Electric Signal Co. LLC
+8C:1F:64:FE:00:00/36	Potter Electric Signal Co. LLC
 8C:1F:64:FE:10:00/36	SOREL GmbH
 8C:1F:64:FE:20:00/36	VUV Analytics, Inc.
 8C:1F:64:FE:30:00/36	Power Electronics Espana, S.L.
@@ -41567,6 +41604,7 @@
 90:48:9A		Hon Hai Precision Ind. Co.,Ltd.
 90:49:92		YSTen Technology Co.,Ltd
 90:49:FA		Intel Corporate
+90:4C:02		vivo Mobile Communication Co., Ltd.
 90:4C:81		Hewlett Packard Enterprise
 90:4C:C5		Apple, Inc.
 90:4C:E5		Hon Hai Precision Ind. Co.,Ltd.
@@ -44624,7 +44662,7 @@ A8:6A:BB		Sagemcom Broadband SAS
 A8:6A:C1		HanbitEDS Co., Ltd.
 A8:6B:7C		Shenzhen Fenglian Technology Co., Ltd.
 A8:6B:AD		Hon Hai Precision Ind. Co.,Ltd.
-A8:6D:04		ebm-papst St. Georgen GmbH & Co. KG
+A8:6D:04		Siemens AG
 A8:6D:5F		Raisecom Technology CO., LTD
 A8:6D:AA		Intel Corporate
 A8:6E:4E		Huawei Device Co., Ltd.
@@ -48192,6 +48230,7 @@ C8:21:DA		Shenzhen YOUHUA Technology Co., Ltd
 C8:24:78		Edifier International
 C8:24:96		Jiangsu Yinhe  Electronics Co.,Ltd.
 C8:25:E1		Lemobile Information Technology (Beijing) Co., Ltd
+C8:26:E2		China Dragon Technology Limited
 C8:28:32		Beijing Xiaomi Electronics Co., Ltd.
 C8:28:E5		Cisco Systems, Inc
 C8:29:2A		Barun Electronics
@@ -50042,7 +50081,6 @@ D4:9F:DD		Huawei Device Co., Ltd.
 D4:A0:2A		Cisco Systems, Inc
 D4:A0:FB		IEEE Registration Authority
 D4:A0:FB:00:00:00/28	M2MD Technologies, Inc.
-D4:A0:FB:10:00:00/28	Henan Lingyunda Information Technology Co., Ltd
 D4:A0:FB:20:00:00/28	Beijing Lingji Innovations technology Co,LTD.
 D4:A0:FB:30:00:00/28	Nexxus Networks India Private Limited
 D4:A0:FB:40:00:00/28	Shenzhen Dijiean Technology Co., Ltd
@@ -52616,6 +52654,7 @@ EC:7C:2C		Huawei Technologies Co.,Ltd
 EC:7C:5C		Juniper Networks
 EC:7C:74		Justone Technologies Co., Ltd.
 EC:7C:B6		Samsung Electronics Co.,Ltd
+EC:7C:BA		Hewlett Packard Enterprise
 EC:7D:11		vivo Mobile Communication Co., Ltd.
 EC:7D:9D		Cpi
 EC:7E:91		Itel Mobile Limited
@@ -53072,6 +53111,7 @@ F0:6D:78		Guangdong Oppo Mobile Telecommunications Corp.,Ltd
 F0:6E:0B		Microsoft Corporation
 F0:6E:32		Microtel Innovation S.R.L.
 F0:6F:46		Ubiik
+F0:6F:CE		Ruckus Wireless
 F0:70:4F		Samsung Electronics Co.,Ltd
 F0:72:8C		Samsung Electronics Co.,Ltd
 F0:72:EA		Google, Inc.
@@ -53500,6 +53540,7 @@ F4:4D:5C		Zyxel Communications Corporation
 F4:4D:AD		Cable Matters Inc.
 F4:4E:05		Cisco Systems, Inc
 F4:4E:38		Olibra LLC
+F4:4E:B4		Cloud Network Technology Singapore Pte. Ltd.
 F4:4E:E3		Intel Corporate
 F4:4E:FD		Actions Semiconductor Co.,Ltd.(Cayman Islands)
 F4:4F:D3		shenzhen hemuwei technology co.,ltd
@@ -54486,6 +54527,7 @@ FC:4A:E9		Castlenet Technology Inc.
 FC:4B:1C		Intersensor S.R.L.
 FC:4B:57		Peerless Instrument Division of Curtiss-Wright
 FC:4B:BC		Sunplus Technology Co., Ltd.
+FC:4C:EA		Dell Inc.
 FC:4C:EF		Huawei Device Co., Ltd.
 FC:4D:6A		Silicon Laboratories
 FC:4D:8C		Shenzhen Pante Electronics Technology Co., Ltd
